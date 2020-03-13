@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <title>Calculate the area of a square</title>
+  </head>
+  <body>
+    <h1> Calculate the area of a square</h1>
+    <p>Enter your number in the textbox below!</p>
+    <input type="text" id="textbox">
+    <button id="Button">Calculate</button>
+    <script>
+     let squareLength;
+     let squareArea;
+function areaOfASquare() {
+ squareLength=document.getElementById("textbox").value;
+ squareArea=squareLength*squareLength;
+ alert("The area of the square is "+ squareArea);
+}        
+    </script>
+    <script>
+document.getElementById("Button").addEventListener
+  ("click", areaOfASquare)
+    </script>
+  </body>
+</html>
